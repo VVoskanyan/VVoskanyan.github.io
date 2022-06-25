@@ -1,0 +1,81 @@
+.footer__inner {
+    padding-top: 150px;
+    display: flex;
+    gap: 48px;
+    margin-bottom: 79px;
+    .footer__map {
+        max-width: 100%;
+    }
+    .footer__cards-box {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .footer__card {
+            background: #018ABE;
+            border-radius: 10px;
+            padding: 40px 45px;
+            min-width: 392px;
+            .card__title {
+                font-family: 'El Messiri';
+                font-weight: 700;
+                font-size: 24px;
+                margin-bottom: 21px;
+            }
+            [class*="__wrapper"]{
+                margin-bottom: 21px;
+                display: flex;
+                align-items: center;
+                img{
+                    margin-right: 20px;
+                }
+            }
+            .button__link {
+                display: inline-block;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 140%;
+                color: #018ABE;
+                text-decoration: none;
+                padding: 9px 15px;
+                margin-top: 9px;
+                background-color: #FFFFFF;
+                border-radius: 3px;
+                transition: 0.5s;
+                &:hover{
+                    color: #155068;
+                    background-color: #79d2f5;
+                }
+            }
+        }
+    }
+}
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    .bottom-right {
+        font-weight: 700;
+        margin-left: 10px;
+    }
+}
+@media (max-width:1400.2px){
+    .footer__inner{
+        flex-direction: column;
+    }
+}
+@media (max-width:576.2px){
+    .footer__inner {
+        padding-top: 50px;
+        .footer__cards-box{
+            .footer__card {
+                min-width: 0;
+                .button__link{
+                    display: block;
+                }
+            }
+        }
+    }
+}

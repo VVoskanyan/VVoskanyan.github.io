@@ -1,0 +1,23 @@
+@import '_reset';
+@import '_header';
+@import '_main';
+@import '_footer';
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+.container{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.main{
+    flex: 1 1 auto
+}
+
+.wrapper{
+    max-width: 1336px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
